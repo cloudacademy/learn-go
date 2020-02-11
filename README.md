@@ -603,7 +603,7 @@ func main() {
 ```
 
 # Demo20 - Methods - Structs
-https://play.golang.org/p/5S4GjweP1Px
+https://play.golang.org/p/L8p6DdQAukd
 
 ```
 package main
@@ -628,22 +628,21 @@ func (p *person) canDrive() bool {
 	}
 }
 
-func (p *person) updateAge(newAge int) int {
+func (p *person) updateAge(newAge int) {
 	p.age = newAge
-	return p.age
 }
 
 func main() {
 	person1 := person{"John", "Doe", 40}
-	person2 := person{"Mark", "Doe", 15}
+	person2 := person{"Mark", "Doe", 19}
 
-	fmt.Println(person1.fullname())
-	fmt.Println(person1.canDrive())
-
-	fmt.Println(person2.fullname())
-	fmt.Println(person2.canDrive())
+	fmt.Printf("%s can drive: %t\n", person1.fullname(), person1.canDrive())
+	fmt.Printf("%s can drive: %t\n", person2.fullname(), person2.canDrive())
 	
-	fmt.Println(person2.updateAge(30))
+	person2.updateAge(person2.age + 1) //marks birthday
+	fmt.Println(person2.age)
+
+	fmt.Printf("%s can drive: %t\n", person2.fullname(), person2.canDrive())
 }
 ```
 
