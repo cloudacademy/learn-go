@@ -419,31 +419,29 @@ func main() {
 ```
 
 # Demo14 - Functions2
-https://play.golang.org/p/8BacN7eX-uX
+https://play.golang.org/p/oYwcr38KfA0
 
 ```
 package main
 
 import "fmt"
 
-func count(blah int, letters ...string) int {
+func displayCount(blah int, letters ...string) {
 	count := 0
 	for range letters {
 		count++
 	}
 
-	return count
+	//display letters count, type, and content
+	fmt.Printf("%d - %T - %s\n", count, letters, letters)
 }
 
 func main() {
-	count1 := count(1, "c", "l", "o", "u", "d")
-	count2 := count(2, "a", "c", "a", "d", "e", "m", "y")
-	fmt.Println(count1)
-	fmt.Println(count2)
-
+	displayCount(1, "c", "l", "o", "u", "d")
+	displayCount(2, "a", "c", "a", "d", "e", "m", "y")
+	
 	cloud := []string{"d", "e", "v", "o", "p", "s"}
-	count3 := count(3, cloud...)
-	fmt.Println(count3)
+	displayCount(3, cloud...)
 }
 ```
 
