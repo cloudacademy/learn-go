@@ -419,21 +419,21 @@ func main() {
 ```
 
 # Demo14 - Functions2
-https://play.golang.org/p/oYwcr38KfA0
+https://play.golang.org/p/s6oqvLIt0Fu
 
 ```
 package main
 
 import "fmt"
 
-func displayCount(blah int, letters ...string) {
+func displayCount(id int, letters ...string) {
 	count := 0
 	for range letters {
 		count++
 	}
 
-	//display letters count, type, and content
-	fmt.Printf("%d - %T - %s\n", count, letters, letters)
+	//display id, letters count, letters type, and letters content
+	fmt.Printf("%d - %d - %T - %s\n", id, count, letters, letters)
 }
 
 func main() {
