@@ -419,7 +419,7 @@ func main() {
 ```
 
 # Demo14 - Functions2
-https://play.golang.org/p/2aJEgBX7lYn
+https://play.golang.org/p/8BacN7eX-uX
 
 ```
 package main
@@ -436,7 +436,6 @@ func count(blah int, letters ...string) int {
 }
 
 func main() {
-
 	count1 := count(1, "c", "l", "o", "u", "d")
 	count2 := count(2, "a", "c", "a", "d", "e", "m", "y")
 	fmt.Println(count1)
