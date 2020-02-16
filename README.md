@@ -769,7 +769,7 @@ func main() {
 ```
 
 # Demo24 - Errors
-https://play.golang.org/p/bE6VdTNCuNu
+https://play.golang.org/p/LskHt_O2E16
 
 ```
 package main
