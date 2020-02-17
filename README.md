@@ -863,7 +863,7 @@ func main() {
 ```
 
 # Demo27 - Goroutine1
-https://play.golang.org/p/YfY3fuyT0zD
+https://play.golang.org/p/8acvr_AJdgx
 
 ```
 package main
