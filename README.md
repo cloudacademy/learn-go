@@ -1021,7 +1021,7 @@ func main() {
 ```
 
 # Demo 32 - Channel Select
-https://play.golang.org/p/2j1aTipFTqK
+https://play.golang.org/p/csPU3qa80Gl
 
 ```
 package main
@@ -1031,7 +1031,7 @@ import "math/rand"
 import "time"
 
 func pause() {
-	n := rand.Intn(5) // n will be between 0 and 10
+	n := rand.Intn(5) // n will be between 0 and 5
 	time.Sleep(time.Duration(n) * time.Second)
 }
 
