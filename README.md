@@ -994,6 +994,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func in(channel chan<- string, msg string) {
@@ -1012,8 +1013,10 @@ func main() {
 	go out(channel)
 
 	for i := 0; i < 10; i++ {
-		in(channel, "cloudacademy")
+		in(channel, fmt.Sprintf("cloudacademy - %d", i))
 	}
+
+	time.Sleep(time.Second * 10) //crude
 }
 ```
 
