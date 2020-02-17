@@ -987,7 +987,7 @@ func main() {
 ```
 
 # Demo 31 - Channel Directions
-https://play.golang.org/p/Rqv37YzxEkq
+https://play.golang.org/p/onPjCfofMay
 
 ```
 package main
