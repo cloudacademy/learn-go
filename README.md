@@ -1283,7 +1283,7 @@ func main() {
 ```
 
 # Demo39 - Scope 1
-https://play.golang.org/p/dHP4A28AnIr
+https://play.golang.org/p/AoUjTO9_ILU
 
 ```
 package main
@@ -1292,22 +1292,27 @@ import "fmt"
 
 var x int = 1
 
+func print(id int, x int) {
+	fmt.Printf("%d: x=%d\n", id, x)
+}
+
 func main() {
-	fmt.Println(x) //1
+	print(1, x)
 	
 	x := 2
 
-	fmt.Println(x) //2
+	print(2, x)
 
 	func(x int){
-		if true {
-			x := 4
-			fmt.Println(x) //4
+		print(3, x)
+		if x := 3; x < 10 {
+			x := 100
+			print(4, x)
 		}
-		fmt.Println(x) //3
-	}(3)
+		print(5, x)
+	}(5)
 	
-	fmt.Println(x) //2
+	print(6, x)
 }
 ```
 
