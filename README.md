@@ -1283,14 +1283,18 @@ func main() {
 ```
 
 # Demo39 - Scope 1
-https://play.golang.org/p/AoUjTO9_ILU
+https://play.golang.org/p/8S4HuOfI8SI
 
 ```
+-- util.go --
+package main
+
+var x int = 11
+
+-- main.go --
 package main
 
 import "fmt"
-
-var x int = 1
 
 func print(id int, x int) {
 	fmt.Printf("%d: x=%d\n", id, x)
@@ -1306,7 +1310,7 @@ func main() {
 	func(x int){
 		print(3, x)
 		if x := 3; x < 10 {
-			x := 100
+			//x := 100
 			print(4, x)
 		}
 		print(5, x)
