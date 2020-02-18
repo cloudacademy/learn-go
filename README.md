@@ -1283,7 +1283,7 @@ func main() {
 ```
 
 # Demo39 - Scope 1
-https://play.golang.org/p/8S4HuOfI8SI
+https://play.golang.org/p/Zn130f09dQD
 
 ```
 -- util.go --
@@ -1309,7 +1309,7 @@ func main() {
 
 	func(x int){
 		print(3, x)
-		if x := 3; x < 10 {
+		if x := 3; x == 3 {
 			//x := 100
 			print(4, x)
 		}
