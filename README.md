@@ -1282,7 +1282,7 @@ func main() {
 }
 ```
 
-# Demo39 - Scope 1
+# Demo39 - Scope - Shadowing
 https://play.golang.org/p/Zn130f09dQD
 
 ```
