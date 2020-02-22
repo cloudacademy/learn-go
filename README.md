@@ -1097,7 +1097,7 @@ func main() {
 ```
 
 # Demo 34 - Channel Close
-https://play.golang.org/p/A5PbNcJ9xM0
+https://play.golang.org/p/LFzBy5xAJI7
 
 ```
 package main
@@ -1110,7 +1110,7 @@ import (
 func process(work <-chan string, fin chan<- string) {
 	var b bytes.Buffer
 	for {		
-		if msg, closed := <-work; closed {
+		if msg, notClosed := <-work; notClosed {
 			fmt.Printf("%s received...\n", msg)
 			b.WriteString(msg)
 		} else {
